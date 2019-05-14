@@ -1,0 +1,6 @@
+framework module witte_mobile_library {
+  umbrella header "witte-mobile-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

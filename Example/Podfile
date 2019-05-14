@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'witte-mobile-library_Example' do
+  pod 'witte-mobile-library', :path => '../'
+
+  target 'witte-mobile-library_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end

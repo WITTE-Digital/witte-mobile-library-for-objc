@@ -1,0 +1,22 @@
+{
+  "name": "witte-mobile-library",
+  "version": "0.1.0",
+  "summary": "A short description of witte-mobile-library.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved/witte-mobile-library",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved": "philip.marienfeld@venqoo.com"
+  },
+  "source": {
+    "git": "https://github.com/acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved/witte-mobile-library.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "witte-mobile-library/Classes/**/*"
+}

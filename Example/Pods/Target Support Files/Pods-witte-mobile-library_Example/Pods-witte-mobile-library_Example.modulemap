@@ -1,0 +1,6 @@
+framework module Pods_witte_mobile_library_Example {
+  umbrella header "Pods-witte-mobile-library_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

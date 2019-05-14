@@ -1,0 +1,27 @@
+PODS:
+  - Expecta (1.0.6)
+  - Specta (1.0.7)
+  - witte-mobile-library (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - witte-mobile-library (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
+
+EXTERNAL SOURCES:
+  witte-mobile-library:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  witte-mobile-library: 21f62116d27e7b5d2e135ef8d7be7569d7763b21
+
+PODFILE CHECKSUM: 7850d6beddd7699c30a58490454a871b6bc92300
+
+COCOAPODS: 1.6.0
