@@ -18,8 +18,10 @@ typedef NS_ENUM(NSUInteger, WDBoxState) {
 
 - (instancetype)initWithResponseData:(NSData*)responseData;
 
-@property (readonly) WDBoxState boxState;
+- (double) getBatteryStateOfChargeWithBoxId:(NSString*)boxId;
 
+@property (readonly) WDBoxState boxState;
+@property (readonly) char* boxFeedbackBytes;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -23,6 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString*)toBoxIdWithPhysicalLockId:(NSString*)physicalLockId;
 
+/**
+ * Check if a string is a valid flinkey Box ID.
+ */
+- (Boolean)isValidBoxIdWithBoxId:(NSString*)boxId;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,10 +12,8 @@ NSString* const PhysicalLockId = @"BADBCPCU";
 
 SpecBegin(BoxIdConverter)
 
-describe(@"Convert box id to physical lock id", ^{
-    
+describe(@"Convert box id to physical lock id", ^{    
     it(@"success", ^{
-        
         WDBoxIdConverter* converter = [[WDBoxIdConverter alloc]init];
         NSString* physicalLockId = [converter toPhysicalLockIdWithBoxId:BoxId];
         expect(physicalLockId).to.equal(PhysicalLockId);
@@ -23,12 +21,18 @@ describe(@"Convert box id to physical lock id", ^{
 });
 
 describe(@"Convert physical lock id box id", ^{
-    
-    it(@"success", ^{
-        
+    it(@"success", ^{        
         WDBoxIdConverter* converter = [[WDBoxIdConverter alloc]init];
         NSString* boxId = [converter toBoxIdWithPhysicalLockId:PhysicalLockId];
         expect(boxId).to.equal(BoxId);
+    });
+});
+
+describe(@"Check for valid box id", ^{
+    it(@"success", ^{
+        WDBoxIdConverter* converter = [[WDBoxIdConverter alloc]init];
+        Boolean isValid = [converter isValidBoxIdWithBoxId:BoxId];
+        expect(isValid).to.equal(true);
     });
 });
 

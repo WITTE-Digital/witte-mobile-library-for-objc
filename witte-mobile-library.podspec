@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'witte-mobile-library'
-  s.version          = '1.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'WITTE Mobile Library for ObjC'
 
 # This description is used to generate tags and improve search results.

@@ -24,8 +24,6 @@
 		B598CC0231097A1ACB4EFC4E /* Pods_witte_mobile_library_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A71402E134B35636F3922DE /* Pods_witte_mobile_library_Example.framework */; };
 		D452AB2E2286BFA40016BBF2 /* WDBoxFeedbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */; };
 		D452AB302286BFD20016BBF2 /* WDBoxIdConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB2F2286BFD20016BBF2 /* WDBoxIdConverterTests.m */; };
-		D452AB322286C0100016BBF2 /* WDConfigurationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB312286C0100016BBF2 /* WDConfigurationTests.m */; };
-		D452AB48228934E20016BBF2 /* WDIdTokenRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB47228934E20016BBF2 /* WDIdTokenRequestTests.m */; };
 		F96DAF852089B700CE33CFFC /* Pods_witte_mobile_library_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993D0EC42BED1AB94FF0FB64 /* Pods_witte_mobile_library_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +67,6 @@
 		993D0EC42BED1AB94FF0FB64 /* Pods_witte_mobile_library_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_witte_mobile_library_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxFeedbackTests.m; sourceTree = "<group>"; };
 		D452AB2F2286BFD20016BBF2 /* WDBoxIdConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxIdConverterTests.m; sourceTree = "<group>"; };
-		D452AB312286C0100016BBF2 /* WDConfigurationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDConfigurationTests.m; sourceTree = "<group>"; };
-		D452AB47228934E20016BBF2 /* WDIdTokenRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDIdTokenRequestTests.m; sourceTree = "<group>"; };
 		E92CD90D171596CDF4D8BA08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FAD10DE48BA052195576C3D5 /* witte-mobile-library.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "witte-mobile-library.podspec"; path = "../witte-mobile-library.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -167,8 +163,6 @@
 			children = (
 				D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */,
 				D452AB2F2286BFD20016BBF2 /* WDBoxIdConverterTests.m */,
-				D452AB312286C0100016BBF2 /* WDConfigurationTests.m */,
-				D452AB47228934E20016BBF2 /* WDIdTokenRequestTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -257,7 +251,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = J4N5TT7VQW;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = J4N5TT7VQW;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -414,8 +412,6 @@
 			files = (
 				D452AB2E2286BFA40016BBF2 /* WDBoxFeedbackTests.m in Sources */,
 				D452AB302286BFD20016BBF2 /* WDBoxIdConverterTests.m in Sources */,
-				D452AB322286C0100016BBF2 /* WDConfigurationTests.m in Sources */,
-				D452AB48228934E20016BBF2 /* WDIdTokenRequestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +531,7 @@
 			baseConfigurationReference = 28495DE8F74E8FC67DFBCB02 /* Pods-witte-mobile-library_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J4N5TT7VQW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "witte-mobile-library/witte-mobile-library-Prefix.pch";
 				INFOPLIST_FILE = "witte-mobile-library/witte-mobile-library-Info.plist";
@@ -550,6 +547,7 @@
 			baseConfigurationReference = 020E991AA4C3380B7B4340B9 /* Pods-witte-mobile-library_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J4N5TT7VQW;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "witte-mobile-library/witte-mobile-library-Prefix.pch";
 				INFOPLIST_FILE = "witte-mobile-library/witte-mobile-library-Info.plist";
@@ -565,6 +563,7 @@
 			baseConfigurationReference = 1B28FC372C0DAEAE70FE48CE /* Pods-witte-mobile-library_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J4N5TT7VQW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -589,6 +588,7 @@
 			baseConfigurationReference = 8D889E1EB4C10046D7330E7F /* Pods-witte-mobile-library_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J4N5TT7VQW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
