@@ -22,30 +22,14 @@ FOUNDATION_EXPORT NSString* const WD_IP_ID;
  */
 FOUNDATION_EXPORT NSString* const WD_BLE_SERIVCE_UUID;
 
-@interface WDConfiguration : NSObject
-
-- (instancetype)initWithCustomerId:(NSInteger)customerId
-                            sdkKey:(NSString*)sdkKey
-                   subscriptionKey:(NSString*)subscriptionKey;
+/**
+ * The Bluetooth LE advertising format for flinkey box 2.4.
+ */
+FOUNDATION_EXPORT NSString* const WD_BLE_ADVERTISING_FORMAT_V1;
 
 /**
- * The tenant id used with the Tapkey backend.
+ * The Bluetooth LE advertising format for flinkey box 3.3.
  */
-@property (readonly) NSString* tenantId;
-
-/**
- * The id token type used to authenticate with the Tapkey backend.
- */
-@property (readonly) NSString* ipId;
-
-/**
- * The Bluetooth LE service UUID of a flinkey box.
- */
-@property (readonly) NSString* bleServiceUuid;
-@property (readonly) NSInteger witteCustomerId;
-@property (readonly) NSString* witteSdkKey;
-@property (readonly) NSString* witteSubscriptionKey;
-
-@end
+FOUNDATION_EXPORT int const WD_BLE_ADVERTISING_FORMAT_V2;
 
 NS_ASSUME_NONNULL_END

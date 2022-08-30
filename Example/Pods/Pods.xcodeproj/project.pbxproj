@@ -100,7 +100,6 @@
 		CFE1DF81A4A44B47A0DC22BB890ABE4E /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AE277DDBBEB6E56069CD158C801ADB /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D0C0AAEB56343217B6C784BD97A6F0B7 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E223C1B854D678E30A45FBDB0EEC3655 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D43013849D94D913C30EDBFBB79FB078 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 93347BAE95022E03FBBA3FFB2BA59E75 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D452AB3D2288136E0016BBF2 /* WDIdTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D452AB332288136E0016BBF2 /* WDIdTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D452AB3E2288136E0016BBF2 /* WDByteUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D452AB342288136E0016BBF2 /* WDByteUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D452AB3F2288136E0016BBF2 /* WDBoxFeedback.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB352288136E0016BBF2 /* WDBoxFeedback.m */; };
 		D452AB402288136E0016BBF2 /* WDConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB362288136E0016BBF2 /* WDConfiguration.m */; };
@@ -108,7 +107,6 @@
 		D452AB422288136E0016BBF2 /* WDBoxFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = D452AB382288136E0016BBF2 /* WDBoxFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D452AB432288136E0016BBF2 /* WDBoxIdConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB392288136E0016BBF2 /* WDBoxIdConverter.m */; };
 		D452AB442288136E0016BBF2 /* WDByteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB3A2288136E0016BBF2 /* WDByteUtils.m */; };
-		D452AB452288136E0016BBF2 /* WDIdTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB3B2288136E0016BBF2 /* WDIdTokenRequest.m */; };
 		D452AB462288136E0016BBF2 /* WDBoxIdConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = D452AB3C2288136E0016BBF2 /* WDBoxIdConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4547D5252735F3C41B55ACCE4F3895F /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5FD59F8F1BC7973D8C12F9942068EC /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4D2ADF89FDAE6BB65DF33E2DD0ABFD9 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D0DEADDCFE16DDB6DF4BCDB2A6087F /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -294,7 +292,6 @@
 		D193E08BFC87C31AA7A5E9E22AAE0843 /* Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Specta-dummy.m"; sourceTree = "<group>"; };
 		D21C56400ECA51CC3E84886EF9C0EB67 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
 		D24343FC1005374DA186083574D5FBFA /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
-		D452AB332288136E0016BBF2 /* WDIdTokenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDIdTokenRequest.h; path = "witte-mobile-library/Classes/WDIdTokenRequest.h"; sourceTree = "<group>"; };
 		D452AB342288136E0016BBF2 /* WDByteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDByteUtils.h; path = "witte-mobile-library/Classes/WDByteUtils.h"; sourceTree = "<group>"; };
 		D452AB352288136E0016BBF2 /* WDBoxFeedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxFeedback.m; path = "witte-mobile-library/Classes/WDBoxFeedback.m"; sourceTree = "<group>"; };
 		D452AB362288136E0016BBF2 /* WDConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDConfiguration.m; path = "witte-mobile-library/Classes/WDConfiguration.m"; sourceTree = "<group>"; };
@@ -302,7 +299,6 @@
 		D452AB382288136E0016BBF2 /* WDBoxFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxFeedback.h; path = "witte-mobile-library/Classes/WDBoxFeedback.h"; sourceTree = "<group>"; };
 		D452AB392288136E0016BBF2 /* WDBoxIdConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxIdConverter.m; path = "witte-mobile-library/Classes/WDBoxIdConverter.m"; sourceTree = "<group>"; };
 		D452AB3A2288136E0016BBF2 /* WDByteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDByteUtils.m; path = "witte-mobile-library/Classes/WDByteUtils.m"; sourceTree = "<group>"; };
-		D452AB3B2288136E0016BBF2 /* WDIdTokenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDIdTokenRequest.m; path = "witte-mobile-library/Classes/WDIdTokenRequest.m"; sourceTree = "<group>"; };
 		D452AB3C2288136E0016BBF2 /* WDBoxIdConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxIdConverter.h; path = "witte-mobile-library/Classes/WDBoxIdConverter.h"; sourceTree = "<group>"; };
 		D75CED17D2E2B5A7685F5298EB84CFAE /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
 		D7963476BAFCDCD8C2BA4EA0A90C3492 /* Pods-witte-mobile-library_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-witte-mobile-library_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -566,8 +562,6 @@
 				D452AB3A2288136E0016BBF2 /* WDByteUtils.m */,
 				D452AB372288136E0016BBF2 /* WDConfiguration.h */,
 				D452AB362288136E0016BBF2 /* WDConfiguration.m */,
-				D452AB332288136E0016BBF2 /* WDIdTokenRequest.h */,
-				D452AB3B2288136E0016BBF2 /* WDIdTokenRequest.m */,
 				21E0109DFF197133A6379727FE8CF170 /* LICENSE */,
 				9A20DF370E8BE216F85FA2E05836DB6F /* README.md */,
 				6211ED7E9DF8E3A784C405C026B6BE8B /* witte-mobile-library.podspec */,
@@ -729,7 +723,6 @@
 				D452AB412288136E0016BBF2 /* WDConfiguration.h in Headers */,
 				D452AB462288136E0016BBF2 /* WDBoxIdConverter.h in Headers */,
 				D452AB3E2288136E0016BBF2 /* WDByteUtils.h in Headers */,
-				D452AB3D2288136E0016BBF2 /* WDIdTokenRequest.h in Headers */,
 				D452AB422288136E0016BBF2 /* WDBoxFeedback.h in Headers */,
 				24179CB8D537A1D9F002418E47DFFF23 /* witte-mobile-library-umbrella.h in Headers */,
 			);
@@ -992,7 +985,6 @@
 				D452AB3F2288136E0016BBF2 /* WDBoxFeedback.m in Sources */,
 				D452AB442288136E0016BBF2 /* WDByteUtils.m in Sources */,
 				D452AB402288136E0016BBF2 /* WDConfiguration.m in Sources */,
-				D452AB452288136E0016BBF2 /* WDIdTokenRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

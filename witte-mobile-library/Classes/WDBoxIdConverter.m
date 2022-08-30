@@ -12,7 +12,7 @@
     NSString* physicalLockId = nil;
     
     if(boxId) {
-     
+        
         // remove separators
         NSString* hexString = [boxId stringByReplacingOccurrencesOfString:@"-" withString:@""];
         
@@ -26,7 +26,7 @@
         
         char zero = 0x00;
         [prefixBytes replaceBytesInRange:NSMakeRange(1, 1) withBytes:&zero];
-
+        
         // concat prefix and payload
         NSMutableData* bytes = [[NSMutableData alloc]init];
         [bytes appendData:prefixBytes];
@@ -85,5 +85,24 @@
     return [[NSString alloc] initWithBytesNoCopy:hexChars length:charLength encoding:NSASCIIStringEncoding freeWhenDone:YES];
 }
 
+- (Boolean)isValidBoxIdWithBoxId:(NSString*)boxId
+{
+    Boolean isValidBoxId = false;
+    
+    if(0 < [boxId length])
+    {
+        NSString* pattern = @"[A-Z0-9]{2}(-[A-Z0-9]{2}){3}";
+        NSRange searchedRange = NSMakeRange(0, [boxId length]);
+        NSError* error = nil;
+        NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern: pattern options:0 error:&error];
+        NSArray* matches = [regex matchesInString:boxId options:0 range: searchedRange];
+        if(1 == [matches count])
+        {
+            isValidBoxId = true;
+        }
+    }
+    
+    return isValidBoxId;
+}
 
 @end

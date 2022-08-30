@@ -2,43 +2,37 @@
 
 The WITTE Mobile Library for Objective-C provides additional classes and methods to further assist with the integration of the WITTE backend and the Tapkey SDK in the scope of a mobile app.
 
-## Features
-* __Configuration__: WITTE Customer ID, WITTE Subscription Key, WITTE SDK Key. 
+## Features 
 * __flinkey Box ID conversion__: Convert flinkey Box IDs to physical lock IDs format and vice versa.
 * __flinkey Box feedback interpretation__: Parse and interpret the 10 byte box feedback in order to determine if the box ahs been opened or closed. 
-* __idToken retrieval__: Query a authentication token from the WITTE backend that is used to authenticate with the Tapkey backend.
 
 ## Getting Started
-### Configuration
-The configuration comprises customer specific configuration values required to access the WITTE backend as well as constants used in context of the Tapkey Mobile Library integration.
-```objective-c
-#import "WDConfiguration.h"
-
-NSInteger const CustomerId = <your WITTE customer ID>;
-NSString* const SdkKey = <your WITTE SDK Key>;
-NSString* const SubscriptionKey = <your WITTE subscription key>;
-
-WDConfiguration* configuration =
-    [[WDConfiguration alloc]initWithCustomerId:TestCustomerId
-                                        sdkKey:TestSdkKey
-                               subscriptionKey:TestSubscriptionKey];
-```
 #### Constants
 ```objective-c
 /**
-* The tenant id used with the Tapkey backend.
-*/
+ * The tenant id used with the Tapkey backend.
+ */
 FOUNDATION_EXPORT NSString* const WD_TENANT_ID;
 
 /**
-* The id token type used to authenticate with the Tapkey backend.
-*/
+ * The id token type used to authenticate with the Tapkey backend.
+ */
 FOUNDATION_EXPORT NSString* const WD_IP_ID;
 
 /**
-* The Bluetooth LE service UUID of a flinkey box.
-*/
+ * The Bluetooth LE service UUID of a flinkey box.
+ */
 FOUNDATION_EXPORT NSString* const WD_BLE_SERIVCE_UUID;
+
+/**
+ * The Bluetooth LE advertising format for flinkey box 2.4.
+ */
+FOUNDATION_EXPORT NSString* const WD_BLE_ADVERTISING_FORMAT_V1;
+
+/**
+ * The Bluetooth LE advertising format for flinkey box 3.3.
+ */
+FOUNDATION_EXPORT int const WD_BLE_ADVERTISING_FORMAT_V2;
 ```
 
 ### flinkey Box ID conversion
@@ -85,27 +79,4 @@ else if(boxFeedback.boxState == WDBoxStateUnlocked) {
 else if(boxFeedback.boxState == WDBoxStateDrawerOpen) {
     // the drawer of the box is opened
 }
-```
-
-### idToken retrieval
-The idToken is a Java Web Token that is required to authenticate a single user with the Tapkey Mobile Library. This library provides a class IdTokenRequest that retrieves a idToken from the WITTE backend using provided configuration properties and a WITTE user ID.
-
-#### IdTokenRequest with configuration object
-
-```objective-c
-#import "WDConfiguration.h"
-#import "WDIdTokenRequest.h"
-
-NSInteger const CustomerId = <your WITTE customer ID>;
-NSString* const SdkKey = <your WITTE SDK Key>;
-NSString* const SubscriptionKey = <your WITTE subscription key>;
-
-WDConfiguration* configuration =
-    [[WDConfiguration alloc]initWithCustomerId:TestCustomerId
-                                        sdkKey:TestSdkKey
-                               subscriptionKey:TestSubscriptionKey];
-
-WDIdTokenRequest* idTokenRequest = [[WDIdTokenRequest alloc]init];
-NSString* idToken = [idTokenRequest executeWithConfiguration:configuration andUserId:1];
-
 ```
