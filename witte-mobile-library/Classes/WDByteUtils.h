@@ -1,6 +1,6 @@
 //
-//  WDByteUtils.h
-//  witte-mobile-library
+// WDByteUtils.h
+// witte-mobile-library
 //
 
 #import <Foundation/Foundation.h>

@@ -1,6 +1,6 @@
 //
-//  WDByteUtils.m
-//  witte-mobile-library
+// WDByteUtils.m
+// witte-mobile-library
 //
 
 #import "WDByteUtils.h"
