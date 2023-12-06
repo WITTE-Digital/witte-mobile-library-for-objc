@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '12.0'
 
 target 'witte-mobile-library_Example' do
   pod 'witte-mobile-library', :path => '../'

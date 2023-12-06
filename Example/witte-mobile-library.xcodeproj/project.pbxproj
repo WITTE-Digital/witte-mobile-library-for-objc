@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8C1CA6992B20621400C7E1CE /* WDBoxFeedbackV3ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA6982B20621400C7E1CE /* WDBoxFeedbackV3ParserTests.m */; };
+		8C1CA69B2B2064DA00C7E1CE /* WDBoxFeedbackV3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA69A2B2064DA00C7E1CE /* WDBoxFeedbackV3Tests.m */; };
+		8C1CA69D2B20651800C7E1CE /* WDBoxCommandBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA69C2B20651800C7E1CE /* WDBoxCommandBuilderTests.m */; };
 		B598CC0231097A1ACB4EFC4E /* Pods_witte_mobile_library_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A71402E134B35636F3922DE /* Pods_witte_mobile_library_Example.framework */; };
 		D452AB2E2286BFA40016BBF2 /* WDBoxFeedbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */; };
 		D452AB302286BFD20016BBF2 /* WDBoxIdConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D452AB2F2286BFD20016BBF2 /* WDBoxIdConverterTests.m */; };
@@ -63,6 +66,9 @@
 		6A71402E134B35636F3922DE /* Pods_witte_mobile_library_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_witte_mobile_library_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C1CA6982B20621400C7E1CE /* WDBoxFeedbackV3ParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxFeedbackV3ParserTests.m; sourceTree = "<group>"; };
+		8C1CA69A2B2064DA00C7E1CE /* WDBoxFeedbackV3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxFeedbackV3Tests.m; sourceTree = "<group>"; };
+		8C1CA69C2B20651800C7E1CE /* WDBoxCommandBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxCommandBuilderTests.m; sourceTree = "<group>"; };
 		8D889E1EB4C10046D7330E7F /* Pods-witte-mobile-library_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-witte-mobile-library_Tests.release.xcconfig"; path = "Target Support Files/Pods-witte-mobile-library_Tests/Pods-witte-mobile-library_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		993D0EC42BED1AB94FF0FB64 /* Pods_witte_mobile_library_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_witte_mobile_library_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDBoxFeedbackTests.m; sourceTree = "<group>"; };
@@ -163,7 +169,10 @@
 			children = (
 				D452AB2D2286BFA40016BBF2 /* WDBoxFeedbackTests.m */,
 				D452AB2F2286BFD20016BBF2 /* WDBoxIdConverterTests.m */,
+				8C1CA6982B20621400C7E1CE /* WDBoxFeedbackV3ParserTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				8C1CA69A2B2064DA00C7E1CE /* WDBoxFeedbackV3Tests.m */,
+				8C1CA69C2B20651800C7E1CE /* WDBoxCommandBuilderTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -412,6 +421,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D452AB2E2286BFA40016BBF2 /* WDBoxFeedbackTests.m in Sources */,
+				8C1CA69D2B20651800C7E1CE /* WDBoxCommandBuilderTests.m in Sources */,
+				8C1CA6992B20621400C7E1CE /* WDBoxFeedbackV3ParserTests.m in Sources */,
+				8C1CA69B2B2064DA00C7E1CE /* WDBoxFeedbackV3Tests.m in Sources */,
 				D452AB302286BFD20016BBF2 /* WDBoxIdConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
