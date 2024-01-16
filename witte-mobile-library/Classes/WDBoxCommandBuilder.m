@@ -4,6 +4,7 @@
 //
 
 #import "WDBoxCommandBuilder.h"
+#import "WDBoxCommandConfig.h"
 #import "WDCRC8.h"
 
 // Constants

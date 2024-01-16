@@ -4,7 +4,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WDBoxCommandConfig.h"
 
 /// This class is responsible for creating commands for the flinkey BLE box.
 @interface WDBoxCommandBuilder : NSObject
