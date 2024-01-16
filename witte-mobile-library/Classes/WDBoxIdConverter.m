@@ -1,6 +1,6 @@
 //
-//  WDBoxIdConverter.m
-//  witte-mobile-library
+// WDBoxIdConverter.m
+// witte-mobile-library
 //
 
 #import "WDBoxIdConverter.h"

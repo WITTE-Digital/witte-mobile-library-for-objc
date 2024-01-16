@@ -1,6 +1,6 @@
 //
-//  WDBoxFeedback.m
-//  witte-mobile-library
+// WDBoxFeedback.m
+// witte-mobile-library
 //
 
 #import "WDBoxFeedback.h"

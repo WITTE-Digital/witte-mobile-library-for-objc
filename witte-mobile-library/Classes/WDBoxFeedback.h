@@ -1,6 +1,6 @@
 //
-//  WDBoxFeedback.h
-//  witte-mobile-library
+// WDBoxFeedback.h
+// witte-mobile-library
 //
 
 #import <Foundation/Foundation.h>

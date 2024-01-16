@@ -1,6 +1,6 @@
 //
-//  WDConfiguration.h
-//  witte-mobile-library
+// WDConfiguration.h
+// witte-mobile-library
 //
 
 #import <Foundation/Foundation.h>

@@ -79,6 +79,16 @@
 		89279E2FFD69D83EA68C8FD91B142A65 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD70B721B2A447199B8094CB7AD6717 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B3D687D9E375FAAD71F19964E9B6E1D /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = E53AC4C0AC6406CA423AC3A4DDF1AFCB /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8B62CAC9DF37DFAC63F27546401559D9 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = B00CAC36D3B59DD9DAAB059541B99ADB /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1CA6792B205F1D00C7E1CE /* WDCRC8.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CA66D2B205F1C00C7E1CE /* WDCRC8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1CA67C2B205F1D00C7E1CE /* WDBoxCommandConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA66E2B205F1C00C7E1CE /* WDBoxCommandConfig.m */; };
+		8C1CA67F2B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA66F2B205F1C00C7E1CE /* WDBoxFeedbackV3Parser.m */; };
+		8C1CA6822B205F1D00C7E1CE /* WDBoxFeedbackV3.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA6702B205F1D00C7E1CE /* WDBoxFeedbackV3.m */; };
+		8C1CA6852B205F1D00C7E1CE /* WDCRC8.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA6712B205F1D00C7E1CE /* WDCRC8.m */; };
+		8C1CA6882B205F1D00C7E1CE /* WDBoxCommandBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1CA6722B205F1D00C7E1CE /* WDBoxCommandBuilder.m */; };
+		8C1CA68B2B205F1D00C7E1CE /* WDBoxFeedbackV3.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CA6732B205F1D00C7E1CE /* WDBoxFeedbackV3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1CA68E2B205F1D00C7E1CE /* WDBoxCommandBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CA6742B205F1D00C7E1CE /* WDBoxCommandBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1CA6912B205F1D00C7E1CE /* WDBoxCommandConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CA6752B205F1D00C7E1CE /* WDBoxCommandConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1CA6942B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CA6762B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C2BB127CED7691139E991DB9676524B /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F887CFA4E39DECF861C4D17AA931D77 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8F87A681A6FA02DEEDEA5D3BEA4D443B /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C13433D30368E67532699B3183A5553 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		949BBE8BFF9972557B50551503831B6C /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A82449E5CC53E96CCB640BDBE06F1D8 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -240,6 +250,16 @@
 		8A87EA3F1B5EAD5209CC29F4533E05B6 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
 		8B416994809E54C9C75A8512350E7659 /* witte-mobile-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "witte-mobile-library.xcconfig"; sourceTree = "<group>"; };
 		8C033BF8E801A7FD3330DF6A73F73A2F /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		8C1CA66D2B205F1C00C7E1CE /* WDCRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDCRC8.h; path = "witte-mobile-library/Classes/WDCRC8.h"; sourceTree = "<group>"; };
+		8C1CA66E2B205F1C00C7E1CE /* WDBoxCommandConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxCommandConfig.m; path = "witte-mobile-library/Classes/WDBoxCommandConfig.m"; sourceTree = "<group>"; };
+		8C1CA66F2B205F1C00C7E1CE /* WDBoxFeedbackV3Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxFeedbackV3Parser.m; path = "witte-mobile-library/Classes/WDBoxFeedbackV3Parser.m"; sourceTree = "<group>"; };
+		8C1CA6702B205F1D00C7E1CE /* WDBoxFeedbackV3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxFeedbackV3.m; path = "witte-mobile-library/Classes/WDBoxFeedbackV3.m"; sourceTree = "<group>"; };
+		8C1CA6712B205F1D00C7E1CE /* WDCRC8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDCRC8.m; path = "witte-mobile-library/Classes/WDCRC8.m"; sourceTree = "<group>"; };
+		8C1CA6722B205F1D00C7E1CE /* WDBoxCommandBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDBoxCommandBuilder.m; path = "witte-mobile-library/Classes/WDBoxCommandBuilder.m"; sourceTree = "<group>"; };
+		8C1CA6732B205F1D00C7E1CE /* WDBoxFeedbackV3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxFeedbackV3.h; path = "witte-mobile-library/Classes/WDBoxFeedbackV3.h"; sourceTree = "<group>"; };
+		8C1CA6742B205F1D00C7E1CE /* WDBoxCommandBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxCommandBuilder.h; path = "witte-mobile-library/Classes/WDBoxCommandBuilder.h"; sourceTree = "<group>"; };
+		8C1CA6752B205F1D00C7E1CE /* WDBoxCommandConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxCommandConfig.h; path = "witte-mobile-library/Classes/WDBoxCommandConfig.h"; sourceTree = "<group>"; };
+		8C1CA6762B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDBoxFeedbackV3Parser.h; path = "witte-mobile-library/Classes/WDBoxFeedbackV3Parser.h"; sourceTree = "<group>"; };
 		8CBC4ABA0F9406BC742922E5CE547690 /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
 		8F5D1A17D411A8D3871F7E3FD67397AE /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		8F887CFA4E39DECF861C4D17AA931D77 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
@@ -554,6 +574,16 @@
 		D488B1541FEA010307D919758914C3A4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				8C1CA6742B205F1D00C7E1CE /* WDBoxCommandBuilder.h */,
+				8C1CA6722B205F1D00C7E1CE /* WDBoxCommandBuilder.m */,
+				8C1CA6752B205F1D00C7E1CE /* WDBoxCommandConfig.h */,
+				8C1CA66E2B205F1C00C7E1CE /* WDBoxCommandConfig.m */,
+				8C1CA6732B205F1D00C7E1CE /* WDBoxFeedbackV3.h */,
+				8C1CA6702B205F1D00C7E1CE /* WDBoxFeedbackV3.m */,
+				8C1CA6762B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.h */,
+				8C1CA66F2B205F1C00C7E1CE /* WDBoxFeedbackV3Parser.m */,
+				8C1CA66D2B205F1C00C7E1CE /* WDCRC8.h */,
+				8C1CA6712B205F1D00C7E1CE /* WDCRC8.m */,
 				D452AB382288136E0016BBF2 /* WDBoxFeedback.h */,
 				D452AB352288136E0016BBF2 /* WDBoxFeedback.m */,
 				D452AB3C2288136E0016BBF2 /* WDBoxIdConverter.h */,
@@ -720,6 +750,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1CA6792B205F1D00C7E1CE /* WDCRC8.h in Headers */,
+				8C1CA6942B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.h in Headers */,
+				8C1CA68B2B205F1D00C7E1CE /* WDBoxFeedbackV3.h in Headers */,
+				8C1CA68E2B205F1D00C7E1CE /* WDBoxCommandBuilder.h in Headers */,
+				8C1CA6912B205F1D00C7E1CE /* WDBoxCommandConfig.h in Headers */,
 				D452AB412288136E0016BBF2 /* WDConfiguration.h in Headers */,
 				D452AB462288136E0016BBF2 /* WDBoxIdConverter.h in Headers */,
 				D452AB3E2288136E0016BBF2 /* WDByteUtils.h in Headers */,
@@ -980,10 +1015,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1CA67F2B205F1D00C7E1CE /* WDBoxFeedbackV3Parser.m in Sources */,
+				8C1CA6852B205F1D00C7E1CE /* WDCRC8.m in Sources */,
+				8C1CA67C2B205F1D00C7E1CE /* WDBoxCommandConfig.m in Sources */,
 				D452AB432288136E0016BBF2 /* WDBoxIdConverter.m in Sources */,
 				84850E4C67C7369C496EA3F82174FBD2 /* witte-mobile-library-dummy.m in Sources */,
 				D452AB3F2288136E0016BBF2 /* WDBoxFeedback.m in Sources */,
 				D452AB442288136E0016BBF2 /* WDByteUtils.m in Sources */,
+				8C1CA6822B205F1D00C7E1CE /* WDBoxFeedbackV3.m in Sources */,
+				8C1CA6882B205F1D00C7E1CE /* WDBoxCommandBuilder.m in Sources */,
 				D452AB402288136E0016BBF2 /* WDConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1111,7 +1151,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Specta/Specta-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Specta/Specta-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Specta/Specta.modulemap";
 				PRODUCT_MODULE_NAME = Specta;
@@ -1141,7 +1181,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Specta/Specta-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Specta/Specta-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Specta/Specta.modulemap";
 				PRODUCT_MODULE_NAME = Specta;
@@ -1172,7 +1212,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-witte-mobile-library_Example/Pods-witte-mobile-library_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-witte-mobile-library_Example/Pods-witte-mobile-library_Example.modulemap";
@@ -1269,7 +1309,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-witte-mobile-library_Tests/Pods-witte-mobile-library_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-witte-mobile-library_Tests/Pods-witte-mobile-library_Tests.modulemap";
@@ -1303,7 +1343,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Expecta/Expecta-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Expecta/Expecta-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Expecta/Expecta.modulemap";
 				PRODUCT_MODULE_NAME = Expecta;
@@ -1333,7 +1373,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-witte-mobile-library_Tests/Pods-witte-mobile-library_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-witte-mobile-library_Tests/Pods-witte-mobile-library_Tests.modulemap";
@@ -1366,7 +1406,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Expecta/Expecta-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Expecta/Expecta-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Expecta/Expecta.modulemap";
 				PRODUCT_MODULE_NAME = Expecta;
@@ -1397,7 +1437,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/witte-mobile-library/witte-mobile-library-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/witte-mobile-library/witte-mobile-library-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/witte-mobile-library/witte-mobile-library.modulemap";
 				PRODUCT_MODULE_NAME = witte_mobile_library;
@@ -1428,7 +1468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-witte-mobile-library_Example/Pods-witte-mobile-library_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-witte-mobile-library_Example/Pods-witte-mobile-library_Example.modulemap";
@@ -1462,7 +1502,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/witte-mobile-library/witte-mobile-library-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/witte-mobile-library/witte-mobile-library-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/witte-mobile-library/witte-mobile-library.modulemap";
 				PRODUCT_MODULE_NAME = witte_mobile_library;
