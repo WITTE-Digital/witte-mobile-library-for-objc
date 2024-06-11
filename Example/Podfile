@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '12.0'
+platform :ios, '13.0'
 
 target 'witte-mobile-library_Example' do
   pod 'witte-mobile-library', :path => '../'
@@ -8,7 +8,7 @@ target 'witte-mobile-library_Example' do
   target 'witte-mobile-library_Tests' do
     inherit! :search_paths
 
-    pod 'Specta'
-    pod 'Expecta'
+    pod 'Specta', '~> 2.0'
+    pod 'Expecta', '~> 1.0' # expecta matchers
   end
 end

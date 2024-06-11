@@ -3,6 +3,9 @@
 // witte-mobile-library
 //
 
+#ifndef WDBoxFeedbackV3Parser_h
+#define WDBoxFeedbackV3Parser_h
+
 #import <Foundation/Foundation.h>
 #import <witte_mobile_library/WDBoxFeedbackV3.h>
 
@@ -20,3 +23,5 @@
 + (BOOL)parseData:(NSData *)data boxFeedback:(WDBoxFeedbackV3 **)boxFeedback;
 
 @end
+
+#endif
