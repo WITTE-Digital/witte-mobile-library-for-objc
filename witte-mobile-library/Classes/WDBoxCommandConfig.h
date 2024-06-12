@@ -26,4 +26,7 @@
 /// Indicates whether a command to lock the box should be built.
 @property (nonatomic, assign) BOOL lockBox;
 
+/// Indicates whether a command to read NFC should be built.
+@property (nonatomic, assign) BOOL readNfc;
+
 @end

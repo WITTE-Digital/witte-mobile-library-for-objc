@@ -17,6 +17,7 @@
         _lockCar = NO;
         _unlockBox = NO;
         _lockBox = NO;
+        _readNfc = NO;
     }
     return self;
 }

@@ -20,8 +20,7 @@ const NSUInteger CommandLength = 16;
 const short CommandVersion = 1;
 
 @implementation WDBoxCommandBuilder
-
-+ (NSData *)build:(WDBoxCommandConfig *)config {
++ (NSData *)build:(WDBoxCommandConfig *)config withTimeMillis:(int64_t) totalMillis {
     NSMutableData *bytes = [NSMutableData dataWithLength:CommandLength];
 
     // Byte 01: Data Byte Count (DBC)
@@ -32,7 +31,7 @@ const short CommandVersion = 1;
     [bytes replaceBytesInRange:NSMakeRange(2, 2) withBytes:&version];
 
     // Bytes 04 - 11: UTS
-    int64_t totalMillis = (int64_t)([[NSDate date] timeIntervalSince1970] * 1000.0);
+    
     [bytes replaceBytesInRange:NSMakeRange(4, 8) withBytes:&totalMillis];
 
     // Byte 12: Command Byte
@@ -52,6 +51,9 @@ const short CommandVersion = 1;
     if (config.status) {
         commandByte |= BitMask4;
     }
+    if (config.readNfc) {
+        commandByte |= BitMask5;
+    }
     if (config.factoryReset) {
         commandByte |= BitMask6;
     }
@@ -68,11 +70,27 @@ const short CommandVersion = 1;
     return bytes;
 }
 
++ (NSData *)build:(WDBoxCommandConfig *)config {
+    int64_t totalMillis = (int64_t)([[NSDate date] timeIntervalSince1970] * 1000.0);
+    return [WDBoxCommandBuilder build:config withTimeMillis:totalMillis];
+}
+
 + (NSData *)buildUnlockCarUnlockBox {
     WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
     config.unlockBox = YES;
     config.unlockCar = YES;
     config.status = YES;
+    return [self build:config];
+}
+
++ (NSData *)buildUnlockCarUnlockBox:(BOOL)readNfc {
+    WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
+    config.unlockBox = YES;
+    config.unlockCar = YES;
+    config.status = YES;
+    if (readNfc) {
+        config.readNfc = YES;
+    }
     return [self build:config];
 }
 
@@ -84,6 +102,17 @@ const short CommandVersion = 1;
     return [self build:config];
 }
 
++ (NSData *)buildUnlockCarLockBox:(BOOL)readNfc {
+    WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
+    config.lockBox = YES;
+    config.unlockCar = YES;
+    config.status = YES;
+    if (readNfc) {
+        config.readNfc = YES;
+    }
+    return [self build:config];
+}
+
 + (NSData *)buildLockCarLockBox {
     WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
     config.lockBox = YES;
@@ -92,9 +121,35 @@ const short CommandVersion = 1;
     return [self build:config];
 }
 
++ (NSData *)buildLockCarLockBox:(BOOL)readNfc {
+    WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
+    config.lockBox = YES;
+    config.lockCar = YES;
+    config.status = YES;
+    if (readNfc) {
+        config.readNfc = YES;
+    }
+    return [self build:config];
+}
+
 + (NSData *)buildStatus {
     WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
     config.status = YES;
+    return [self build:config];
+}
+
++ (NSData *)buildStatus:(BOOL)readNfc {
+    WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
+    config.status = YES;
+    if (readNfc) {
+        config.readNfc = YES;
+    }
+    return [self build:config];
+}
+
++ (NSData *)buildReadNfc {
+    WDBoxCommandConfig *config = [[WDBoxCommandConfig alloc] init];
+    config.readNfc = YES;
     return [self build:config];
 }
 
