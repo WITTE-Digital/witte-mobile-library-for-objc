@@ -5,7 +5,8 @@
 
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTest.h>
-//#import "WDBoxFeedbackV3Parser.h"
+#import "WDBoxFeedbackV3Parser.h"
+#import "WDBoxFeedbackV3.h"
 #import "WDBoxFeedback.h"
 #import "WDByteUtils.h"
 
@@ -80,4 +81,134 @@ double const BoxV3FeedbackBattery08Result = 98.41;
     }
 }
 
+- (void)testParseValidDataCase01 {
+    WDBoxFeedbackV3* expected = [[WDBoxFeedbackV3 alloc]init];
+    expected.batteryStateOfCharge = 89;
+    expected.batteryIsCharging = NO;
+    expected.batteryChargerIsConnected = NO;
+    expected.drawerState = NO;
+    expected.drawerAccessibility = YES;
+    
+    uint8_t dataBytes[] = {
+        0x01, // [00]
+        0x00, // [01]
+        0x02, // [02]
+        0x01, // [03]
+        0x00, // [04]
+        0x01, // [05]
+        0x03, // [06]
+        0x59, // [07]
+        0x43, // [08]
+        0x40, // [09]
+        0x00, // [10]
+        0x00  // [11]
+    };
+    NSData *data = [NSData dataWithBytes:dataBytes length:sizeof(dataBytes)];
+    
+    WDBoxFeedbackV3* result = [[WDBoxFeedbackV3 alloc]init];
+    [WDBoxFeedbackV3Parser parseData:data boxFeedback:&result];
+    
+    expect(result.batteryStateOfCharge).equal(result.batteryStateOfCharge);
+    expect(result.batteryIsCharging).equal(result.batteryIsCharging);
+    expect(result.batteryChargerIsConnected).equal(result.batteryChargerIsConnected);
+    expect(result.drawerState).equal(result.drawerState);
+    expect(result.drawerAccessibility).equal(result.drawerAccessibility);
+    expect(result.nfcTag1Uid).equal(result.nfcTag1Uid);
+    expect(result.nfcTag2Uid).equal(result.nfcTag2Uid);
+    expect(result.nfcTag3Uid).equal(result.nfcTag3Uid);
+}
+
+- (void)testParseValidDataCase02 {
+    WDBoxFeedbackV3* expected = [[WDBoxFeedbackV3 alloc]init];
+    expected.batteryStateOfCharge = 92;
+    expected.batteryIsCharging = NO;
+    expected.batteryChargerIsConnected = NO;
+    expected.drawerState = NO;
+    expected.drawerAccessibility = NO;
+    
+    uint8_t dataBytes[] = {
+        0x01, // [00]
+        0x00, // [01]
+        0x02, // [02]
+        0x01, // [03]
+        0x00, // [04]
+        0x01, // [05]
+        0x03, // [06]
+        0x5c, // [07]
+        0x43, // [08]
+        0x00, // [09]
+        0x00, // [10]
+        0x00  // [11]
+    };
+    
+    NSData *data = [NSData dataWithBytes:dataBytes length:sizeof(dataBytes)];
+    
+    WDBoxFeedbackV3* result = [[WDBoxFeedbackV3 alloc]init];
+    [WDBoxFeedbackV3Parser parseData:data boxFeedback:&result];
+    
+    expect(result.batteryStateOfCharge).equal(result.batteryStateOfCharge);
+    expect(result.batteryIsCharging).equal(result.batteryIsCharging);
+    expect(result.batteryChargerIsConnected).equal(result.batteryChargerIsConnected);
+    expect(result.drawerState).equal(result.drawerState);
+    expect(result.drawerAccessibility).equal(result.drawerAccessibility);
+    expect(result.nfcTag1Uid).equal(result.nfcTag1Uid);
+    expect(result.nfcTag2Uid).equal(result.nfcTag2Uid);
+    expect(result.nfcTag3Uid).equal(result.nfcTag3Uid);
+}
+
+- (void)testParseValidDataCase04 {
+    WDBoxFeedbackV3* expected = [[WDBoxFeedbackV3 alloc]init];
+    expected.batteryStateOfCharge = 91;
+    expected.batteryIsCharging = NO;
+    expected.batteryChargerIsConnected = NO;
+    expected.drawerState = NO;
+    expected.drawerAccessibility = NO;
+    
+    uint8_t dataBytes[] = {
+        0x01, // [00]
+        0x00, // [01]
+        0x01, // [02]
+        0x03, // [03]
+        0x5b, // [04]
+        0x43, // [05]
+        0x00  // [06]
+    };
+    NSData *data = [NSData dataWithBytes:dataBytes length:sizeof(dataBytes)];
+    
+    WDBoxFeedbackV3* result = [[WDBoxFeedbackV3 alloc]init];
+    [WDBoxFeedbackV3Parser parseData:data boxFeedback:&result];
+    
+    expect(result.batteryStateOfCharge).equal(result.batteryStateOfCharge);
+    expect(result.batteryIsCharging).equal(result.batteryIsCharging);
+    expect(result.batteryChargerIsConnected).equal(result.batteryChargerIsConnected);
+    expect(result.drawerState).equal(result.drawerState);
+    expect(result.drawerAccessibility).equal(result.drawerAccessibility);
+    expect(result.nfcTag1Uid).equal(result.nfcTag1Uid);
+    expect(result.nfcTag2Uid).equal(result.nfcTag2Uid);
+    expect(result.nfcTag3Uid).equal(result.nfcTag3Uid);
+}
+
+- (void)testParseValidDataCase01With2NfcTags {
+    WDBoxFeedbackV3* expected = [[WDBoxFeedbackV3 alloc]init];
+    expected.batteryStateOfCharge = 86;
+    expected.batteryIsCharging = NO;
+    expected.batteryChargerIsConnected = NO;
+    expected.drawerState = NO;
+    expected.drawerAccessibility = YES;
+    expected.nfcTag1Uid = @"041858DA181390";
+    expected.nfcTag2Uid = @"04758ECAF26281";
+    
+    NSData* data = [WDByteUtils toByteArray:@"AQACAQADEAcEGFjaGBOQBwR1jsryYoEBA1ZBQA=="];
+    WDBoxFeedbackV3* result = [[WDBoxFeedbackV3 alloc]init];
+    [WDBoxFeedbackV3Parser parseData:data boxFeedback:&result];
+    
+    expect(result.batteryStateOfCharge).equal(result.batteryStateOfCharge);
+    expect(result.batteryIsCharging).equal(result.batteryIsCharging);
+    expect(result.batteryChargerIsConnected).equal(result.batteryChargerIsConnected);
+    expect(result.drawerState).equal(result.drawerState);
+    expect(result.drawerAccessibility).equal(result.drawerAccessibility);
+    expect(result.nfcTag1Uid).equal(result.nfcTag1Uid);
+    expect(result.nfcTag2Uid).equal(result.nfcTag2Uid);
+    expect(result.nfcTag3Uid).equal(result.nfcTag3Uid);
+}
 @end

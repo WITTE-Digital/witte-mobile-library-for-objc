@@ -16,6 +16,9 @@
         _batteryChargerIsConnected = NO;
         _drawerState = NO;
         _drawerAccessibility = NO;
+        _nfcTag1Uid = nil;
+        _nfcTag2Uid = nil;
+        _nfcTag3Uid = nil;
     }
     return self;
 }
