@@ -40,4 +40,19 @@
  */
 @property (nonatomic, assign) BOOL drawerAccessibility;
 
+/**
+ * @brief Represents the UID of the first NFC tag.
+ */
+@property (nonatomic, strong) NSString *nfcTag1Uid;
+
+/**
+ * @brief Represents the UID of the second NFC tag.
+ */
+@property (nonatomic, strong) NSString *nfcTag2Uid;
+
+/**
+ * @brief Represents the UID of the third NFC tag.
+ */
+@property (nonatomic, strong) NSString *nfcTag3Uid;
+
 @end

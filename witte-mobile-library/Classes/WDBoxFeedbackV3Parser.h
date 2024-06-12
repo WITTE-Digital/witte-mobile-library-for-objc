@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <witte_mobile_library/WDBoxFeedbackV3.h>
+#import <WDBoxFeedbackV3.h>
 
 /**
  * @brief Class for parsing the box feedback data for version 3.
